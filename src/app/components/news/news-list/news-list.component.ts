@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { NewsService } from 'src/app/services/news.service';
 
 @Component({
@@ -8,7 +8,6 @@ import { NewsService } from 'src/app/services/news.service';
 })
 export class NewsListComponent {
 
-  @Input() params: any;
   newsList: any
   constructor(private newSV: NewsService) {
     this.newsList = {}
