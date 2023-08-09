@@ -1,0 +1,55 @@
+<form [formGroup]="formulary">
+    <div>
+        <label>Palabra clave </label>
+        <input type="text" placeholder="Tesla" formControlName="text">
+    </div>
+    <div>
+        <label>Asc/Desc </label>
+        <select formControlName="sortDirection" id="direccion">
+            <option value="asc">Ascendente</option>
+            <option value="desc">Descendente</option>
+        </select>
+    </div>
+    <div>
+        <label>Ordenar por </label>
+        <select formControlName="sort" id="fecha">
+            <option value="publish-time">Fecha</option>
+            <option value="sentiment">Emociones</option>
+        </select>
+    </div>
+    <div>
+        <label>Sentimiento Mínimo </label>
+        <input type="range" min="-1" max="1" step="0.1" id="minSent" formControlName="minSentiment">
+        <div>
+            {{this.formulary.value.minSentiment}}
+        </div>
+    </div>
+    <div>
+        <label>Sentimiento Máximo </label>
+        <input type="range" min="-1" max="1" step="0.1" id="maxSent" formControlName="maxSentiment">
+        <div>
+            {{this.formulary.value.maxSentiment}}
+        </div>
+    </div>
+    <div>
+        <label>Última fecha de publicación </label>
+        <input type="date" formControlName="latestPublishDate">
+    </div>
+    <div>
+        <label>Primera fecha de publicación </label>
+        <input type="date" formControlName="earliestPublishDate">
+    </div>
+    <div>
+        <label>Idioma </label>
+        <select formControlName="language" id="idioma">
+            <option value="es">Español</option>
+            <option value="en">Inglés</option>
+            <option value="fr">Francés</option>
+            <option value="pt">Portugés</option>
+            <option value="it">Italiano</option>
+            <option value="de">Alemán</option>
+            <option value="jp">Japonés</option>
+        </select>
+    </div>
+
+</form>

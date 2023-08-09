@@ -1,0 +1,20 @@
+<a [href]="this.results.url">
+    <div class="card">
+        <figure>
+            <img [src]="this.results.image"
+                onerror="this.onerror=null;this.src='https://forbo.azureedge.net/forboimages/6414/13e99e85-3c86-4456-aaa9-1c2aaf2e200a.webp';">
+        </figure>
+        <div class="contenido">
+            <div class="titulo">
+                <h4>{{this.results.title}}</h4>
+            </div>
+            <div class="autor">
+                <h6>{{this.results.author || 'Anonimo'}}</h6>
+                <h6>{{this.results.publish_date | date}}</h6>
+            </div>
+            <div class="descripcion">
+                <p>{{this.results.text}}</p>
+            </div>
+        </div>
+    </div>
+</a>
