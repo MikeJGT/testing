@@ -9,4 +9,5 @@ export interface News {
     text: String,
     title: String,
     url: String
+  
 }
