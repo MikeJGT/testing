@@ -1,10 +1,9 @@
 pipeline {
  agent any
     stages {
-        stage('build') {
+        stage('test') {
             steps {
-                sh 'node test'           
-                sh 'node build'
+                sh 'ng test'
             }
         }
     }
