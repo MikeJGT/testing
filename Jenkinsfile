@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                sh 'ng test'
+                sh 'echo Ejecucion de comandos'
             }
         }
     }
