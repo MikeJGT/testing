@@ -7,6 +7,7 @@ pipeline {
                 sh 'pwd'
                 sh 'whoami'
                 sh 'ls -la'
+                sh 'echo otro'
             }
         }
     }
