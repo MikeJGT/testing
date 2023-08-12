@@ -4,10 +4,7 @@ pipeline {
         stage('test') {
             steps {
                 sh 'echo Ejecucion de comandos'
-                sh 'pwd'
-                sh 'whoami'
-                sh 'ls -la'
-                sh 'echo otro'
+                sh 'ng test'
             }
         }
     }
